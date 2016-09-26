@@ -114,7 +114,6 @@ html {
 .hovereffect h2 {
   text-align: center;
   position: relative;
-  font-size: 17px;
   background-color: transparent;
   color: #FFF;
   padding-top: 1.6vw;
@@ -144,7 +143,46 @@ html {
   transform: translate3d(0,0,0);
 }
 
+@media (max-width: 767px) {
+    h2 {
+        font-size: 20px;
+    }
+    
+    .heading {
+        font-size: 30px;
+        font-family: "Lato";
+    }
+}
 
-#details {
-    font-size: 10px;
+@media (min-width: 768px) and (max-width: 991px) {
+    h2 {
+        font-size: 10px;
+    }
+    
+    .heading {
+        font-size: 15px;
+        font-family: "Lato";
+    }    
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    h2 {
+        font-size: 12px;
+    }
+    
+    .heading {
+        font-size: 18px;
+        font-family: "Lato";
+    }    
+}
+
+@media (min-width: 1200px) {
+    h2 {
+        font-size: 15px;
+    }
+    
+    .heading {
+        font-size: 25px;
+        font-family: "Lato";
+    }    
 }
