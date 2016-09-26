@@ -62,6 +62,14 @@ html {
     background-color: darkgray;
 }
 
+#guestposter {
+    padding-top: 10px;
+}
+
+.icon {
+    align-content: center;
+}
+
 /*Hover Effect CSS:*/
 
 .hovereffect {
@@ -145,11 +153,11 @@ html {
 
 @media (max-width: 767px) {
     h2 {
-        font-size: 20px;
+        font-size: 24px;
     }
     
     .heading {
-        font-size: 30px;
+        font-size: 36px;
         font-family: "Lato";
     }
 }
