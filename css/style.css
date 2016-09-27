@@ -59,7 +59,7 @@ html {
 }
 
 #footer {
-    background-color: darkgray;
+    background-color: #d1d1d1;
 }
 
 #guestposter {
@@ -151,13 +151,15 @@ html {
   transform: translate3d(0,0,0);
 }
 
+/*MEDIA QUERIES*/
+
 @media (max-width: 767px) {
     h2 {
-        font-size: 24px;
+        font-size: 17px;
     }
     
     .heading {
-        font-size: 36px;
+        font-size: 26px;
         font-family: "Lato";
     }
 }
@@ -193,4 +195,36 @@ html {
         font-size: 25px;
         font-family: "Lato";
     }    
+}
+
+/*BUTTONS*/
+
+
+.btn {
+    padding: 14px 24px;
+    margin: 8px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: floralwhite;
+    background: #ce620a;
+}
+ 
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+ 
+.btn-primary {
+    background: #0099cc;
+    color: #ffffff;
+}
+ 
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #33a6cc;
+}
+ 
+.btn-primary:active, .btn-primary.active {
+    background: #007299;
+    box-shadow: none;
 }
