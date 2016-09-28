@@ -70,6 +70,14 @@ html {
     align-content: center;
 }
 
+.link {
+    color: #ce620a;
+}
+
+.link:hover {
+    color: #a34100
+}
+
 /*Hover Effect CSS:*/
 
 .hovereffect {
@@ -161,6 +169,7 @@ html {
     .heading {
         font-size: 26px;
         font-family: "Lato";
+        padding-top: 40px;
     }
 }
 
@@ -188,11 +197,11 @@ html {
 
 @media (min-width: 1200px) {
     h2 {
-        font-size: 15px;
+        font-size: 13px;
     }
     
     .heading {
-        font-size: 25px;
+        font-size: 20px;
         font-family: "Lato";
     }    
 }
@@ -203,7 +212,6 @@ html {
 .btn {
     padding: 14px 24px;
     margin: 8px;
-    border: 0 none;
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -211,20 +219,3 @@ html {
     background: #ce620a;
 }
  
-.btn:focus, .btn:active:focus, .btn.active:focus {
-    outline: 0 none;
-}
- 
-.btn-primary {
-    background: #0099cc;
-    color: #ffffff;
-}
- 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
-    background: #33a6cc;
-}
- 
-.btn-primary:active, .btn-primary.active {
-    background: #007299;
-    box-shadow: none;
-}
