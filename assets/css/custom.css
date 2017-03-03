@@ -1,0 +1,17 @@
+#firstname {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 60px;
+    padding-bottom: 15px;
+    text-align: center
+    color: #5f7291;
+}
+#lastname {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 60px;
+    padding-bottom: 15px;
+    text-align: center
+    color: #8095b7;
+}
+::selection {
+  background: #ef8247;
+}

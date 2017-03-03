@@ -25,6 +25,15 @@ a:hover, a:focus {
     padding-left: 5px;
 }
 
+.logo {
+    padding: 40px;
+}
+
+.heading {
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 1px;
+}
+
 .case-study {
     text-align: left;
     padding-top: 1vw;
@@ -79,6 +88,10 @@ html {
     color: #a34100
 }
 
+#resume-button {
+    align-content: center;
+}
+
 /*Hover Effect CSS:*/
 
 .hovereffect {
@@ -98,8 +111,8 @@ html {
   height: 80%;
   left: 10%;
   top: 10%;
-  border-bottom: 1px solid #FFF;
-  border-top: 1px solid #FFF;
+  border-bottom: 3px solid #FFF;
+  border-top: 3px solid #FFF;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
   -webkit-transform: scale(0,1);
@@ -168,9 +181,13 @@ html {
     }
     
     .heading {
+        top:40%;       
         font-size: 26px;
         font-family: "Lato";
-        padding-top: 40px;
+    }
+    
+    .logo {
+        width: 300px;
     }
 }
 
@@ -180,9 +197,20 @@ html {
     }
     
     .heading {
+        top:30%; 
         font-size: 15px;
         font-family: "Lato";
+        text-align: center;
     }    
+    .logo {
+        width: 40%;
+        height: 40%;
+    }
+    
+    .skinnier {
+    padding-left: 50px;
+    padding-right: 50px;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -191,9 +219,21 @@ html {
     }
     
     .heading {
+        top:30%; 
         font-size: 18px;
         font-family: "Lato";
-    }    
+        text-align: center;
+    }  
+    
+    .logo {
+        width: 40%;
+        height: 40%;
+    }
+    
+    .skinnier {
+    padding-left: 100px;
+    padding-right: 100px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -202,9 +242,21 @@ html {
     }
     
     .heading {
+        top:30%; 
         font-size: 20px;
         font-family: "Lato";
+        text-align: center;
     }    
+    
+    .logo {
+        width: 35%;
+        height: 35%;
+    }
+    
+    .skinnier {
+    padding-left: 150px;
+    padding-right: 150px;
+    }
 }
 
 /*BUTTONS*/
