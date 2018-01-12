@@ -1,17 +1,16 @@
-.myname {
-    font-family: 'Quicksand', sans-serif;
-    letter-spacing: 4px;
-    font-size: 3em;
-    text-align: center;
-    text-decoration: none;
-    color: black;
-    font-weight: 900;
-    text-decoration: none;
+a {
+    color: #ce620a;
 }
 
 a:hover, a:focus {
     text-decoration: none;
 }
+
+a.class2 {color:black}
+a.class2:link {text-decoration: none}
+a.class2:visited {text-decoration: none}
+a.class2:hover {text-decoration: none}
+a.class2:active {text-decoration: none}
 
 * {
     font-family: 'Lato', sans-serif;
@@ -44,6 +43,14 @@ a:hover, a:focus {
     margin-top: 20px;
 }
 
+.bottom {
+    padding-top: 40px;
+}
+
+.socialicons {
+    margin-left: 7px;
+}
+
 /*Responsive Text */
 
 html {
@@ -69,7 +76,7 @@ html {
 }
 
 #footer {
-    background-color: #d1d1d1;
+    background-color: white;
 }
 
 #guestposter {
@@ -88,8 +95,24 @@ html {
     color: #a34100
 }
 
+mark {
+    display: inline-block;
+    background-color: #FAB83B;
+    line-height: 0em;
+}
+
+.links {
+    font-weight: 700;
+    text-decoration: none;    
+}
+
 #resume-button {
     align-content: center;
+}
+
+.hideme
+{
+    opacity:0;
 }
 
 /*Hover Effect CSS:*/
@@ -111,13 +134,8 @@ html {
   height: 80%;
   left: 10%;
   top: 10%;
-  border-bottom: 3px solid #FFF;
-  border-top: 3px solid #FFF;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: scale(0,1);
-  -ms-transform: scale(0,1);
-  transform: scale(0,1);
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
 }
 
 .hovereffect:hover .overlay {
@@ -151,8 +169,6 @@ html {
   filter: alpha(opacity=0);
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(0,-100%,0);
-  transform: translate3d(0,-100%,0);
 }
 
 .hovereffect a, hovereffect p {
@@ -182,7 +198,7 @@ html {
     
     .heading {
         top:40%;       
-        font-size: 26px;
+        font-size: 22px;
         font-family: "Lato";
     }
     
@@ -197,8 +213,8 @@ html {
     }
     
     .heading {
-        top:30%; 
-        font-size: 15px;
+        top:40%; 
+        font-size: 14px;
         font-family: "Lato";
         text-align: center;
     }    
@@ -215,11 +231,11 @@ html {
 
 @media (min-width: 992px) and (max-width: 1199px) {
     h2 {
-        font-size: 12px;
+        font-size: 22px;
     }
     
     .heading {
-        top:30%; 
+        top:40%; 
         font-size: 18px;
         font-family: "Lato";
         text-align: center;
@@ -242,8 +258,8 @@ html {
     }
     
     .heading {
-        top:30%; 
-        font-size: 20px;
+        top:40%; 
+        font-size: 24px;
         font-family: "Lato";
         text-align: center;
     }    
