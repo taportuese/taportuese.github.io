@@ -106,15 +106,6 @@ mark {
     text-decoration: none;    
 }
 
-#resume-button {
-    align-content: center;
-}
-
-.hideme
-{
-    opacity:0;
-}
-
 /*Hover Effect CSS:*/
 
 .hovereffect {
@@ -202,6 +193,12 @@ mark {
         font-family: "Lato";
     }
     
+    .heading2 {
+        top:40%;       
+        font-size: 18px;
+        font-family: "Lato";
+    }
+    
     .logo {
         width: 300px;
     }
@@ -217,7 +214,14 @@ mark {
         font-size: 14px;
         font-family: "Lato";
         text-align: center;
-    }    
+    } 
+    
+    .heading2 {
+        top:34%;       
+        font-size: 12px;
+        font-family: "Lato";
+    }
+    
     .logo {
         width: 40%;
         height: 40%;
@@ -240,6 +244,11 @@ mark {
         font-family: "Lato";
         text-align: center;
     }  
+    .heading2 {
+        top:34%;       
+        font-size: 14px;
+        font-family: "Lato";
+    }
     
     .logo {
         width: 40%;
@@ -263,6 +272,11 @@ mark {
         font-family: "Lato";
         text-align: center;
     }    
+    .heading2 {
+        top:34%;       
+        font-size: 18px;
+        font-family: "Lato";
+    }
     
     .logo {
         width: 35%;
