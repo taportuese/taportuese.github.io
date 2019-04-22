@@ -1,9 +1,11 @@
 a {
-    color: #ce620a;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 a:hover, a:focus {
     text-decoration: none;
+    color: #F28B7D;
 }
 
 a.class2 {color:black}
@@ -12,35 +14,76 @@ a.class2:visited {text-decoration: none}
 a.class2:hover {text-decoration: none}
 a.class2:active {text-decoration: none}
 
+.portfolio {
+    position: absolute;
+    text-align: left;
+    top: -70px;
+}
+
+.about {
+    position: absolute;
+    text-align: left;
+    top: -70px;
+}
+
 * {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
 }
 
 .gallery {
-    padding-top: 10px;
-    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 10px;
     padding-right: 5px;
     padding-left: 5px;
 }
 
 .logo {
-    padding: 40px;
+    padding: 20px 30px 0px 30px;
 }
 
-.heading {
-    font-family: 'Roboto Slab', serif;
+h2 {
+    font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: 1px;
+    text-align: left;
+}
+
+.casestudytext {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.case-study-title {
+    font-family: 'Roboto Mono', monospace;
+    text-align: left;
+    font-size: 18px;
 }
 
 .case-study {
     text-align: left;
-    padding-top: 1vw;
-    padding-left: 2vw;
+    font-size: 13px;
+}
+
+.sidebar {
+    text-align: left;
+    font-size: 13px;
+}
+
+.brandstatement {
+    text-align: left;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 1000;
+    font-size: 12px;
 }
 
 .row {
     margin-top: 20px;
+}
+
+.writeup {
+    float: right;
 }
 
 .bottom {
@@ -48,7 +91,7 @@ a.class2:active {text-decoration: none}
 }
 
 .socialicons {
-    margin-left: 7px;
+    margin-left: 15px;
 }
 
 /*Responsive Text */
@@ -75,20 +118,12 @@ html {
   }
 }
 
-#footer {
-    background-color: white;
-}
-
-#guestposter {
-    padding-top: 10px;
-}
-
 .icon {
     align-content: center;
 }
 
 .link {
-    color: #ce620a;
+    color: #F28B7D;
 }
 
 .link:hover {
@@ -101,11 +136,6 @@ mark {
     line-height: 0em;
 }
 
-.links {
-    font-weight: 700;
-    text-decoration: none;    
-}
-
 /*Hover Effect CSS:*/
 
 .hovereffect {
@@ -114,7 +144,6 @@ mark {
   float: left;
   overflow: hidden;
   position: relative;
-  text-align: center;
   cursor: default;
 }
 
@@ -146,16 +175,16 @@ mark {
 
 .hovereffect:hover img {
   filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
-  filter: brightness(0.6);
+  filter: brightness(0.7);
   -webkit-filter: brightness(0.4);
 }
 
 .hovereffect h2 {
-  text-align: center;
+  text-align: left;
   position: relative;
   background-color: transparent;
   color: #FFF;
-  padding-top: 1.6vw;
+  margin-top: 10vw;
   opacity: 0;
   filter: alpha(opacity=0);
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -164,7 +193,6 @@ mark {
 
 .hovereffect a, hovereffect p {
   color: #FFF;
-  padding: 1em 0;
   opacity: 0;
   filter: alpha(opacity=0);
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -188,19 +216,36 @@ mark {
     }
     
     .heading {
-        top:40%;       
+        top:70%;      
+        text-align: left;
         font-size: 22px;
-        font-family: "Lato";
-    }
-    
-    .heading2 {
-        top:40%;       
-        font-size: 18px;
-        font-family: "Lato";
     }
     
     .logo {
         width: 300px;
+    }
+    
+    .portfolio {
+        top: 25px;
+        left: 150px;
+    }
+
+    .about {
+        top: 25px;
+        right: 150px;
+    }
+    
+    .case-study {
+        text-align: left;
+        font-size: 13px;
+        margin-right: 20px;
+    }
+    
+    .casestudytext {
+        padding-top: 10px;
+        padding-bottom: 0px;
+        padding-right: 5px;
+        padding-left: 25px;
     }
 }
 
@@ -211,25 +256,32 @@ mark {
     
     .heading {
         top:40%; 
+        text-align: left;
         font-size: 14px;
-        font-family: "Lato";
-        text-align: center;
     } 
-    
-    .heading2 {
-        top:34%;       
-        font-size: 12px;
-        font-family: "Lato";
-    }
     
     .logo {
         width: 40%;
         height: 40%;
     }
     
+    .portfolio {
+        left: 140px;
+    }
+
+    .about {
+        right: 160px;
+    }
+    
     .skinnier {
-    padding-left: 50px;
-    padding-right: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .sidebar {
+        text-align: left;
+        font-size: 13px;
+        padding-left: 30px;
     }
 }
 
@@ -241,23 +293,35 @@ mark {
     .heading {
         top:40%; 
         font-size: 18px;
-        font-family: "Lato";
-        text-align: center;
+        text-align: left;
     }  
-    .heading2 {
-        top:34%;       
-        font-size: 14px;
-        font-family: "Lato";
-    }
     
     .logo {
         width: 40%;
         height: 40%;
     }
     
+    .portfolio {
+        left: 140px;
+        top: -80px;
+        font-size: 17px;
+    }
+
+    .about {
+        right: 160px;
+        top: -80px;
+        font-size: 17px;
+    }
+    
+    .sidebar {
+        text-align: left;
+        font-size: 13px;
+        padding-left: 30px;
+    }
+    
     .skinnier {
-    padding-left: 100px;
-    padding-right: 100px;
+        padding-left: 100px;
+        padding-right: 100px;
     }
 }
 
@@ -269,18 +333,30 @@ mark {
     .heading {
         top:40%; 
         font-size: 24px;
-        font-family: "Lato";
         text-align: center;
     }    
-    .heading2 {
-        top:34%;       
-        font-size: 18px;
-        font-family: "Lato";
-    }
     
     .logo {
         width: 35%;
         height: 35%;
+    }
+    
+    .portfolio {
+        left: 200px;
+        top: -80px;
+        font-size: 19px;
+    }
+
+    .about {
+        right: 220px;
+        top: -80px;
+        font-size: 19px;
+    }
+    
+    .sidebar {
+        text-align: left;
+        font-size: 13px;
+        padding-left: 30px;
     }
     
     .skinnier {
