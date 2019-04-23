@@ -136,6 +136,10 @@ mark {
     line-height: 0em;
 }
 
+.hands {
+    padding-top: 10px;
+}
+
 /*Hover Effect CSS:*/
 
 .hovereffect {
