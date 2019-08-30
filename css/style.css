@@ -29,6 +29,7 @@ a.class2:active {text-decoration: none}
 * {
     font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
+    cursor: url('../images/cursor.png'), auto;	
 }
 
 .gallery {
@@ -134,6 +135,10 @@ mark {
     display: inline-block;
     background-color: #FAB83B;
     line-height: 0em;
+}
+
+.portrait {
+    border-radius: 50%;
 }
 
 .hands {
@@ -251,6 +256,11 @@ mark {
         padding-right: 5px;
         padding-left: 25px;
     }
+    
+    .portrait {
+        padding: 10%;
+    }
+
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -286,6 +296,10 @@ mark {
         text-align: left;
         font-size: 13px;
         padding-left: 30px;
+    }
+    
+    .class2 {
+    padding-top: 25px;
     }
 }
 
@@ -327,6 +341,10 @@ mark {
         padding-left: 100px;
         padding-right: 100px;
     }
+    
+    .class2 {
+    padding-top: 25px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -366,6 +384,10 @@ mark {
     .skinnier {
     padding-left: 150px;
     padding-right: 150px;
+    }
+    
+    .class2 {
+    padding-top: 25px;
     }
 }
 
