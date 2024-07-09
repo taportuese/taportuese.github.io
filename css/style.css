@@ -24,26 +24,24 @@
 }
 
 .indexbody {
-    background-color: #e5e5e5;
+    background-color: #EFE8DC;
 }
 
 .menu {
     float: right;
     padding-top: 70px;
-    font-family: linotype-vectora, sans-serif;
-    font-weight: 900;
-    font-size: 10px;
-    letter-spacing: 1.2px;
+    font-family: "neulis-sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
 }
 
 .menuabout {
     float: right;
     padding-top: 70px;
-    font-family: linotype-vectora, sans-serif;
-    font-weight: 900;
-    font-size: 10px;
+    font-family: "neulis-sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
     color: white;
-    letter-spacing: 1.2px;
 }
 
 .menu mark {
@@ -150,7 +148,7 @@
 }
 
 #about-details {
-    background-color: #e5e5e5;
+    background-color: #EFE8DC;
     padding-top: 80px;
     padding-bottom: 80px;
     line-height: 24px;
@@ -166,39 +164,41 @@
     font-weight: 700;
     font-style: normal;
     font-size: 25px;
+    line-height: 36px;
 }
 
 .h2 {
-    font-family: linotype-vectora, sans-serif;
+    font-family: "neulis-sans", sans-serif;
     text-align: left;
-    font-weight: 900;
-    font-size: 10px;
+    font-weight: 700;
+    font-size: 12px;
     padding-top: 14px;
-    letter-spacing: 1.2px;
+    padding-bottom: 14px;
+    letter-spacing: 1.1px;
 }
 
 .h3 {
-    font-family: linotype-vectora, sans-serif;
+    font-family: "neulis-sans", sans-serif;
     text-align: left;
-    font-weight: 900;
-    font-size: 10px;
+    font-weight: 700;
+    font-size: 12px;
     padding-top: 8px;
-    letter-spacing: 1.2px;
+    letter-spacing: 1.1px;
 }
 
 .p {
-    font-family: linotype-vectora, sans-serif;
+    font-family: "neulis-sans", sans-serif;
     text-align: left;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 26px;
 }
 
 .p2 {
-    font-family: linotype-vectora, sans-serif;
+    font-family: "neulis-sans", sans-serif;
     text-align: left;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 18px;
 }
 
@@ -220,13 +220,24 @@
 }
 
 #secretpadding2 {
-    height: 80px;
+    height: 180px;
 }
 
 #footer {
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: #ffb1ab;
+    background-color: #000000;
+}
+
+#footertitles {
+    color: #9B9B9B;
+}
+
+#footertext {
+    color: #EFE8DC;
+    text-align: left;
+    line-height: 28px;
+    float: left;
 }
 
 #sociallinks {
@@ -311,14 +322,14 @@ a.menuhomelinks:hover {
 
 /* selected link */
 a.menuhomelinks:active {
-    color: #42b2c3;
+    color: #ffb1ab;
     text-decoration: none;
 }
 
 /* unvisited link */
 a.footerlink:link {
   text-decoration: none;
-  color: inherit;
+  color: #efe8dc;
 }
 
 /* visited link */
@@ -328,12 +339,12 @@ a.footerlink:visited {
 
 /* mouse over link */
 a.footerlink:hover {
-    color: #f95f30;
+    color: #ffb1ab;
 }
 
 /* selected link */
 a.footerlink:active {
-    color: #42b2c3;
+    color: #ffb1ab;
     text-decoration: none;
 }
 
@@ -349,7 +360,7 @@ a.arrows:hover {
 
 /* selected link */
 a.arrows:active {
-    color: #42b2c3;
+    color: #f95f30;
     text-decoration: none;
 }
 
@@ -460,6 +471,24 @@ html {
 
 /*MEDIA QUERIES*/
 
+    @media (max-width: 770px) {
+        .previousproject {
+        display: none;
+    }
+    
+    .nextproject {
+        display: none;
+    }
+    
+    #footernav {
+        display: none;
+    }
+    
+    #logogrid {
+        display: none;
+    }
+}
+
 @media (max-width: 900px) {
     h2 {
         font-size: 10px;
@@ -510,19 +539,6 @@ html {
     #secretpadding2 {
         height: 0px;
     }
-    
-    #sociallinks {
-        text-align: left;
-    }
-    
-    .previousproject {
-        display: none;
-    }
-    
-    .nextproject {
-        display: none;
-    }
-
 
 
 @media (min-width: 901px) and (max-width: 1199px) {
@@ -572,4 +588,23 @@ html {
     .thumbnails {
         padding-bottom: 80px;
     }
+    
+}
+
+/* IMAGE HOVER ON ZOOM */
+    
+/* [1] The container */
+.img-hover-zoom {
+  height: 300px; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.5);
 }
