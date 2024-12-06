@@ -482,7 +482,7 @@ html {
 
 /*MEDIA QUERIES*/
 
-    @media (max-width: 770px) {
+@media (max-width: 770px) {
         .previousproject {
         display: none;
     }
@@ -498,9 +498,14 @@ html {
     #logogrid {
         display: none;
     }
+    
+    #secretpadding {
+        display: none;
+    }
+    
 }
 
-@media (max-width: 900px) {
+@media (min-width: 771px) and (max-width: 900px) {
     h2 {
         font-size: 10px;
     }
@@ -550,6 +555,12 @@ html {
     #secretpadding2 {
         height: 0px;
     }
+    
+    #mobilelogogrid {
+        display: none;
+    }
+}
+    
 
 
 @media (min-width: 901px) and (max-width: 1199px) {
@@ -573,6 +584,10 @@ html {
     
     .thumbnails {
         padding-bottom: 60px;
+    }
+    
+    #mobilelogogrid {
+        display: none;
     }
 
 }
@@ -598,6 +613,10 @@ html {
     
     .thumbnails {
         padding-bottom: 80px;
+    }
+    
+    #mobilelogogrid {
+        display: none;
     }
     
 }
